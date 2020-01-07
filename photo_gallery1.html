@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information Security</title>
+	<link rel="stylesheet" type="text/css" href="css/photo_gallery1.css">
+</head>
+<body style="height: 100%">
+
+<div class="top">
+	<ul>
+  		<li><a href="index.html">Faculty</a></li>
+      <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Departments</a>
+      <div class="dropdown-content">
+          <a href="crypto.html">Cryptography and Discrete Mathematics</a>
+          <a href="infosec.html">Information security</a>
+      </div>
+  		<li><a href="news3.html">News</a></li>
+  		<li class="dropdown">
+   		<a href="javascript:void(0)" class="dropbtn">For students</a>
+   		<div class="dropdown-content">
+      		<a href="https://my.tuit.uz/auth/login" target="_blank">Personal office</a>
+    	</div>
+	</ul>
+</div>
+
+<div id="navbar">
+	<h3>Category</h3>
+	<a href="news3.html">News</a>
+	<a href="photo4.html">Photogallery</a>
+	<a href="video2.html">Videogallery</a>
+</div>
+
+<div id="gallery">
+  <h2>Student Union</h2>
+  <p style="text-indent: 40px;">Students Union contributes to a significant extent to the internationalization and international cooperation at TUIT. The main role in this activity is played by a special team who is in charge of international affairs - International Matters Committee of Students Union. The Committee represents students before the University authorities and is responsible for expenditures on international cooperation of students organizations. They collect and share information on international scholarships, internships and educational programs for students. International Affairs Committee is a link between the University (represented by authorities and Centre for International Cooperation) and all students.</p>
+
+  <div>
+    <img id="main_image" src="images/st2.jpg">
+  </div>
+
+  <div>
+    <img src="images/st2.jpg" class="secondary_images" onclick="change_image(0)">
+    <img src="images/st3.jpg" class="secondary_images" onclick="change_image(1)">
+    <img src="images/st4.jpg" class="secondary_images" onclick="change_image(2)">
+    <img src="images/st5.jpg" class="secondary_images" onclick="change_image(3)">
+    <img src="images/st6.jpg" class="secondary_images" onclick="change_image(4)">
+    <img src="images/st7.jpg" class="secondary_images" onclick="change_image(5)"> 
+  </div>
+
+</div>
+</div>
+
+
+  <script type="text/javascript">
+    function change_image(i) {
+      var first = ["images/st2.jpg", "images/st3.jpg","images/st4.jpg","images/st5.jpg","images/st6.jpg","images/st7.jpg"];
+
+      document.getElementById("main_image").src = first[i];
+
+    }
+  </script>
+
+</body>
+</html>

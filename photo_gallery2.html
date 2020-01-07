@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information Security</title>
+	<link rel="stylesheet" type="text/css" href="css/photo_gallery1.css">
+</head>
+<body>
+
+<div class="top">
+	<ul>
+  		<li><a href="index.html">Faculty</a></li>
+      <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Departments</a>
+      <div class="dropdown-content">
+          <a href="crypto.html">Cryptography and Discrete Mathematics</a>
+          <a href="infosec.html">Information security</a>
+      </div>
+  		<li><a href="news3.html">News</a></li>
+  		<li class="dropdown">
+   		<a href="javascript:void(0)" class="dropbtn">For students</a>
+   		<div class="dropdown-content">
+      		<a href="https://my.tuit.uz/auth/login" target="_blank">Personal office</a>
+    	</div>
+	</ul>
+</div>
+
+<div id="navbar">
+	<h3>Category</h3>
+	<a href="news3.html">News</a>
+	<a href="photo4.html">Photogallery</a>
+	<a href="video2.html">Videogallery</a>
+</div>
+
+<div id="gallery">
+  <h2>Student life</h2>
+  <p style="text-indent: 40px;">Student Life is here for you; our most basic task is helping students get the most out of their experiences at the university. With Student Life you can find your own niche on campus; connect with students within or beyond your residence hall, organization, or academic program; get involved in student organizations, leadership opportunities, and campus jobs and internships; and choose the housing and dining and living options that work best for you.</p>
+
+  <div>
+    <img id="main_image" src="images/st8.jpg">
+  </div>
+
+  <div>
+    <img src="images/st8.jpg" class="secondary_images" onclick="change_image(0)">
+    <img src="images/st7.jpg" class="secondary_images" onclick="change_image(1)">
+    <img src="images/st9.jpg" class="secondary_images" onclick="change_image(2)">
+    <img src="images/st5.jpg" class="secondary_images" onclick="change_image(3)">
+    <img src="images/st2.jpg" class="secondary_images" onclick="change_image(4)">
+    <img src="images/st3.jpg" class="secondary_images" onclick="change_image(5)"> 
+  </div>
+
+</div>
+</div>
+  
+  
+  <script type="text/javascript">
+    function change_image(i) {
+      var first = ["images/st8.jpg", "images/st7.jpg","images/st9.jpg","images/st5.jpg","images/st2.jpg","images/st3.jpg"];
+
+      document.getElementById("main_image").src = first[i];
+
+    }
+  </script>
+
+</body>
+</html>

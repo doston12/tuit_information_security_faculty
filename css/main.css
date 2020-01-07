@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino;
+}
+
+#header {
+    width: 100%;
+    height: 120px;
+    background-color: #d2ca65;
+}
+
+.top {
+    z-index: 3;
+    background-color: black;
+    width: 100%;
+}
+.top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+li {
+    font-size: 20px;
+    float: left;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    font-size: 16px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.slideshow {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.mySlides {
+    display: none;
+}
+.imagesText {
+    color: #f2f2f2;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -animation-name: fade;
+    animation-duration: 1.5s;
+}
+.fade img {
+    width: 100%;
+    height: 600px;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.main_body {
+    height: 100%;
+    padding-left: 9%;
+    padding-right: 11%;
+}
+.information{
+    text-align: justify;
+    font-size: 20px;
+}
+#tuit_images {
+    padding: 8px;
+    display: inline-block;
+}
+#tuit_images img{
+    float: left;
+    width: 33%;
+    height: 33%;
+    padding: 2px;
+}
+h2{
+    text-align: center;
+}
+#aboutfac{
+    font-size: 26px;
+    font-style: oblique;
+    padding-left: 50px;
+}
+
+.icoPic {
+    position: relative; 
+    top: 4px;
+}
+.every{
+    padding-left: 10px;
+}
+.personImage {
+    width: 150px;
+    height: 140px;
+    border-radius: 20px;   
+}
+.deen{
+    font-size: 18px;
+    color: blue;
+}
+.deen_word_style{
+    font-weight: bold;
+}
+p {
+    font-size: 20px;
+}
+
+.deens {
+    display: inline;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.deen_of_fac {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+}
+.deen_of_fac td{
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+div.tab a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1em;
+}
+div.tab a:hover {
+    background-color: #ddd;
+}
+div.tab a:focus, .active {
+    background-color: #ccc;
+}
+.tabcontent {
+    display: none;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.tabcontent table {
+    display: inline;
+    padding: 10px;
+}
+.jadval h6 {
+    display: inline;
+    font-size: 14px;
+}
+.jadval table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.jadval th, td {
+    text-align: left;
+    padding: 6px;
+    font-size: 0.9em;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+.link_curriculum {
+    display: none;
+}
+
+.news {
+    position: absolute;
+    margin-left: 23%;
+    margin-bottom: 14%;
+}
+.newsImage {
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    height: 180px;
+    margin: 8px;
+    border-radius: 50%;
+}
+.newsImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.newsImage:hover {
+    border: 1px solid #eee;
+    width: 205px;
+    height: 185px;
+    transition: 0.8s;
+    font-size: 18px;
+}
+.descriptionNews {
+    text-align: center;
+    margin-bottom: 5%;
+}
+h2 a{
+    text-decoration: none;
+}
+h2 a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.footer {
+    width: 100%;
+    height: 220px;
+    background-color: #333;
+    padding-left: 10%;
+    margin-top: 20%;
+}
+.footer_data {
+    float: left;
+    width: 23%;
+}
+.footer_data a {
+    padding-top: 20px;
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .fade img {
+        width: 100%;
+        height: 450px;
+    }
+    #tuit_images {
+        margin-left: 10%;
+    }
+    #tuit_images img{
+        float: left;
+        width: 28%;
+        height: 28%;
+        padding: 2px;
+    }
+    h2 a{
+        margin-left: -48%;
+        position: absolute;
+        margin-top: 2%;
+        text-decoration: none;
+        padding-left: 35%;
+    }
+    h2 a:hover{
+        color: red;
+        text-decoration: none;
+    }
+    .news {
+        margin-left: 20%;
+        margin-top: 8%;
+    }
+    .newsImage {
+        border: 1px solid #ccc;
+        float: left;
+        width: 150px;
+        height: 120px;
+        margin: 8px;
+        border-radius: 50%;
+    }
+    p {
+        font-size: 14px;
+    }
+    .newsImage:hover {
+        border: 1px solid #eee;
+        width: 105px;
+        height: 85px;
+        transition: 0.8s;
+        font-size: 14px;
+    }
+    .deens {
+        display: block;
+        width: 100%;
+    }
+    .deen_of_fac {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .deen_of_fac td{
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .curriculum {
+        display: none;
+    }
+    .link_curriculum {
+        position: relative;
+        margin-right: 45%;
+        display: block;
+    }
+    .link_curriculum a {
+        display: block;
+        text-decoration: none;
+        font-size: 12px;
+        padding-left: 40%;
+        margin-bottom: 10px;
+        color: blue;
+    }
+    .footer {
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        background-color: #333;
+        padding-left: 10%;
+        margin-top: 34%;
+    }
+}
+@media (max-width:  700px) {
+    .newsImage {
+        border: 1px solid #ccc;
+        float: left;
+        width: 110px;
+        height: 90px;
+        margin: 8px;
+        border-radius: 50%;
+    }
+    .newsImage:hover {
+        border: 1px solid #eee;
+        width: 115px;
+        height: 95px;
+        transition: 0.8s;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footer {
+        margin-top: 45%;
+    }
+    .fade img {
+        width: 100%;
+        height: 250px;
+    }
+    .personImage {
+        width: 100px;
+        height: 80px;
+        border-radius: 20px;   
+    }
+    .news {
+        margin-left: 20%;
+        margin-top: 8%;
+    }
+    .newsImage {
+        border: 1px solid #ccc;
+        float: left;
+        width: 70px;
+        height: 50px;
+        margin: 8px;
+        border-radius: 50%;
+    }
+    .newsImage:hover {
+        border: 1px solid #eee;
+        width: 75px;
+        height: 55px;
+        transition: 0.8s;
+        font-size: 14px;
+    }
+    .top li, .top li a {
+        font-size: 12px;
+    }
+    h2, h3, .deen {
+        font-size: 14px;
+    }
+    .descriptionNews, .footer_data a {
+        font-size: 12px;
+    }
+}

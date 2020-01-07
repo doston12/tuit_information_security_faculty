@@ -1,0 +1,20 @@
+.footer {
+    float: left;
+    width: 82%;
+    height: 220px;
+    background-color: #333;
+    margin-left: 17%;
+    padding-left: 1%;
+    margin-top: 10%;
+}
+.footer_data {
+    float: left;
+    width: 23%;
+}
+.footer_data a {
+    padding-top: 20px;
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}

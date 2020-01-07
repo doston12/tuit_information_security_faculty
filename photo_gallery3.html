@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Information Security</title>
+	<link rel="stylesheet" type="text/css" href="css/photo_gallery1.css">
+</head>
+<body>
+
+<div class="top">
+	<ul>
+  		<li><a href="index.html">Faculty</a></li>
+      <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Departments</a>
+      <div class="dropdown-content">
+          <a href="crypto.html">Cryptography and Discrete Mathematics</a>
+          <a href="infosec.html">Information security</a>
+      </div>
+  		<li><a href="news3.html">News</a></li>
+  		<li class="dropdown">
+   		<a href="javascript:void(0)" class="dropbtn">For students</a>
+   		<div class="dropdown-content">
+      		<a href="https://my.tuit.uz/auth/login" target="_blank">Personal office</a>
+    	</div>
+	</ul>
+</div>
+
+<div id="navbar">
+	<h3>Category</h3>
+	<a href="news3.html">News</a>
+	<a href="photo4.html">Photogallery</a>
+	<a href="video2.html">Videogallery</a>
+</div>
+
+<div id="gallery">
+  <h2>University life</h2>
+  <p style="text-indent: 40px;">University is a half-way house between leaving home and getting a job.I didn't see university as a chance of escaping from home, because I like being at home. You become independent away from home and you have to stand on your own two feet. I admire students who manage to live on just a grant and a student loan. It's hard to balance your finances alone, because most students are used to Mum helping out. There are people who come to university whose parents shop weekly in Marks & Spencer, so they think that normal. Hopefully they realise that is a bit extreme and they shop in cheaper supermarkets. It might be poorer quality but at least it's cheap!</p>
+
+  <div>
+    <img id="main_image" src="images/st10.jpg">
+  </div>
+
+  <div>
+    <img src="images/st10.jpg" class="secondary_images" onclick="change_image(0)">
+    <img src="images/st11.jpg" class="secondary_images" onclick="change_image(1)">
+    <img src="images/st9.jpg" class="secondary_images" onclick="change_image(2)">
+    <img src="images/st8.jpg" class="secondary_images" onclick="change_image(3)">
+    <img src="images/st7.jpg" class="secondary_images" onclick="change_image(4)">
+    <img src="images/st6.jpg" class="secondary_images" onclick="change_image(5)"> 
+  </div>
+
+</div>
+</div>
+
+  <script type="text/javascript">
+    function change_image(i) {
+      var first = ["images/st10.jpg", "images/st11.jpg","images/st9.jpg","images/st8.jpg","images/st7.jpg","images/st6.jpg"];
+
+      document.getElementById("main_image").src = first[i];
+
+    }
+  </script>
+
+</body>
+</html>
